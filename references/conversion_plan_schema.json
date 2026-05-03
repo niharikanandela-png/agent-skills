@@ -1,0 +1,51 @@
+{
+  "planTimestamp": "<ISO 8601>",
+  "targetJavaVersion": "17",
+  "targetFramework": "spring-cloud-function",
+  "azureFunctionAppName": "<from input>",
+  "totalFunctions": 0,
+  "functions": [
+    {
+      "originalName": "string",
+      "azureFunctionName": "string (CLEAN — no aws/lambda)",
+      "cleanFolderName": "string (lowercase, no aws/lambda)",
+      "originalRuntime": "string",
+      "originalHandler": "string",
+      "originalTriggerType": "string",
+      "azure": {
+        "triggerType": "HttpTrigger",
+        "route": "string",
+        "httpMethod": "GET|POST",
+        "packageName": "com.migration.<cleanFolderName>",
+        "handlerClass": "<CleanName>Handler",
+        "serviceClass": "<CleanName>Service",
+        "requestModelClass": "<CleanName>Request",
+        "responseModelClass": "<CleanName>Response"
+      },
+      "dependencyMapping": [
+        {
+          "awsDependency": "string",
+          "azureReplacement": "string",
+          "mavenGroupId": "string",
+          "mavenArtifactId": "string"
+        }
+      ],
+      "awsSdkCallsDetected": [],
+      "businessLogicSummary": "string",
+      "sourceFiles": []
+    }
+  ],
+  "sharedDependencies": [
+    {
+      "mavenGroupId": "string",
+      "mavenArtifactId": "string",
+      "version": "string",
+      "purpose": "string"
+    }
+  ],
+  "springBootDependencies": [
+    "spring-boot-starter",
+    "spring-cloud-function-adapter-azure",
+    "azure-functions-java-library"
+  ]
+}
